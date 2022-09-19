@@ -7,6 +7,14 @@ Content-Type: application/json
   "description": "수학 숙제를 해야한다"
 }
 
+### POST Todo 생성
+POST localhost:8080/api/todos
+Content-Type: application/json
+
+{
+  "title": "식사약속",
+  "description": "12시에 점심먹자"
+}
 
 ### GET Todo List 조회
 GET localhost:8080/api/todos

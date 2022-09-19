@@ -33,7 +33,8 @@ class TodoService(
         val todo = Todo(
             title = request.title,
             description = request.description,
-            createdAt = LocalDateTime.now()
+            done = request.done,
+            createdAt = LocalDateTime.now(),
         )
 
         return todoRepository.save(todo)
